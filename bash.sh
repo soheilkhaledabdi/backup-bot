@@ -23,8 +23,10 @@ mysql_password = '$mysql_password'
 mysql_database = '$mysql_database'" > config.py
 
 
+#install pip
+apt install python3-pip
 # Install dependencies
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 # Create a systemd service unit file
 echo "[Unit]
