@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# Replace with your GitHub repository URL
-github_repo="https://github.com/soheilkhaledabdi/backup-bot.git"
-
-# Clone the repository
-git clone $github_repo
-
-# Move into the cloned directory
-cd backup-bot
-
 # Create the configuration file
 read -p "Enter your Telegram API ID: " api_id
 read -p "Enter your Telegram API hash: " api_hash
