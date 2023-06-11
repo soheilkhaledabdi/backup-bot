@@ -13,10 +13,10 @@ read -p "Enter your MySQL database name: " mysql_database
 
 
 # Create the configuration file
-echo "api_id = $api_id
+echo "api_id = '$api_id'
 api_hash = '$api_hash'
 bot_token = '$bot_token'
-bot_chat_id = '$chat_id'
+bot_chat_id = $chat_id
 mysql_host = '$mysql_host'
 mysql_user = '$mysql_user'
 mysql_password = '$mysql_password'
@@ -54,3 +54,7 @@ sudo systemctl start telegram_bot.service
 
 # Display service status
 sudo systemctl status telegram_bot.service
+
+
+
+
