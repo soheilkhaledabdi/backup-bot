@@ -36,7 +36,7 @@ After=network.target
 [Service]
 User=$USER
 WorkingDirectory=$(pwd)
-ExecStart=/usr/bin/python3 $(pwd)/telegram_bot.py
+ExecStart=/usr/bin/python3 $(pwd)/main.py
 Restart=always
 
 [Install]
